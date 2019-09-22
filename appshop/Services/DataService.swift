@@ -13,6 +13,7 @@ class DataService{
     static let instance = DataService()
     
     private let categories = [
+        Category(title: "Best Seller" , imageName: "best_seller.png"),
         Category(title: "Science Fiction" , imageName: "science_fiction.png"),
         Category(title: "Small Business" , imageName: "small_business.png"),
         Category(title: "Language Learning" , imageName: "language_learning.png"),
