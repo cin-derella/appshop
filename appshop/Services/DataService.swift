@@ -20,12 +20,35 @@ class DataService{
         Category(title: "Graphic Design" , imageName: "graphic_design.png")
     ]
     
+    private let ScienceFiction = [
+        Product(title: "Three-Body Problem Cixin Liu" , price:"¥1.99",imageName: "threebody.jpg"),
+        Product(title: "The Dark Forest Cixin Liu" , price:"¥1.99",imageName: "darkforest.jpg"),
+        Product(title: "Death's Ends Cixin Liu" , price:"¥1.99",imageName: "deathsend.jpg"),
+        Product(title: "Ball Lightning Cixin Liu" , price:"¥1.99",imageName: "balllightning.jpg"),
+        Product(title: "Supernova Era Cixin Liu" , price:"¥1.99",imageName: "supernova.jpg")
+    ]
     
+    
+
     
     func getCategories()->[Category]{
         return categories
         
     }
     
+    func getScienceFiction()->[Product]{
+        return ScienceFiction
+        
+    }
     
+    func getProducts(forCategoryTitle title: String) -> [Product] {
+        switch title {
+        case "SCIENCEFICTION":
+            return getScienceFiction()
+        default:
+            return getScienceFiction()
+        }
+        
+       
+    }
 }
