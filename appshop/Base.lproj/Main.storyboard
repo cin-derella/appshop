@@ -83,17 +83,17 @@
                     <navigationItem key="navigationItem" title="Cin.derel.la" id="ZHr-Op-aqZ"/>
                     <connections>
                         <outlet property="categoryTable" destination="AJp-An-TlZ" id="hHC-GK-xrS"/>
-                        <segue destination="c24-Qc-gJQ" kind="show" id="vfw-jg-L61"/>
+                        <segue destination="c24-Qc-gJQ" kind="show" identifier="ProductVC" id="vfw-jg-L61"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1292.753623188406" y="-564.94565217391312"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="G0y-nd-PNR">
             <objects>
-                <viewController id="c24-Qc-gJQ" sceneMemberID="viewController">
+                <viewController id="c24-Qc-gJQ" customClass="ProductsVC" customModule="appshop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="8Gj-40-oWy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
