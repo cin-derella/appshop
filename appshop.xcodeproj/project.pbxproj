@@ -12,6 +12,9 @@
 		FE7626B923364C0700B9FCD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7626B723364C0700B9FCD0 /* Main.storyboard */; };
 		FE7626BB23364C0700B9FCD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7626BA23364C0700B9FCD0 /* Assets.xcassets */; };
 		FE7626BE23364C0700B9FCD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7626BC23364C0700B9FCD0 /* LaunchScreen.storyboard */; };
+		FED1A4C62337B86B0076FC85 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED1A4C52337B86B0076FC85 /* ProductCell.swift */; };
+		FED1A4C82337BAF70076FC85 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED1A4C72337BAF70076FC85 /* Product.swift */; };
+		FED1A4CB2337C3990076FC85 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED1A4CA2337C3990076FC85 /* ProductsVC.swift */; };
 		FEF3B02223365BC900769EEC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3B02123365BC900769EEC /* CategoryCell.swift */; };
 		FEF3B0242336616A00769EEC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3B0232336616A00769EEC /* Category.swift */; };
 		FEF3B0272336672100769EEC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3B0262336672100769EEC /* DataService.swift */; };
@@ -25,6 +28,9 @@
 		FE7626BA23364C0700B9FCD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE7626BD23364C0700B9FCD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE7626BF23364C0700B9FCD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED1A4C52337B86B0076FC85 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		FED1A4C72337BAF70076FC85 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FED1A4CA2337C3990076FC85 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		FEF3B02123365BC900769EEC /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		FEF3B0232336616A00769EEC /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FEF3B0262336672100769EEC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				FEF3B0232336616A00769EEC /* Category.swift */,
+				FED1A4C72337BAF70076FC85 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				FE7626B523364C0700B9FCD0 /* CategoriesVC.swift */,
+				FED1A4CA2337C3990076FC85 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				FEF3B02123365BC900769EEC /* CategoryCell.swift */,
+				FED1A4C52337B86B0076FC85 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,9 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED1A4CB2337C3990076FC85 /* ProductsVC.swift in Sources */,
 				FE7626B623364C0700B9FCD0 /* CategoriesVC.swift in Sources */,
 				FE7626B423364C0700B9FCD0 /* AppDelegate.swift in Sources */,
+				FED1A4C82337BAF70076FC85 /* Product.swift in Sources */,
 				FEF3B02223365BC900769EEC /* CategoryCell.swift in Sources */,
+				FED1A4C62337B86B0076FC85 /* ProductCell.swift in Sources */,
 				FEF3B0242336616A00769EEC /* Category.swift in Sources */,
 				FEF3B0272336672100769EEC /* DataService.swift in Sources */,
 			);
