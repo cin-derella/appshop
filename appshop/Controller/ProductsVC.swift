@@ -33,12 +33,11 @@ class ProductsVC: UIViewController ,UICollectionViewDelegate,UICollectionViewDat
         
         navigationItem.title=category.title
         self.categoryName = category.title
-        //VCName = UILabel()
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        VCName.text = "I Love " + self.categoryName + "!"
+        let itemStr:String = (products.count <= 1) ? "item" : "items"
+        VCName.text = "I Love \(self.categoryName)! \(products.count) \(itemStr) listed!"
         return products.count
     }
     
@@ -47,9 +46,7 @@ class ProductsVC: UIViewController ,UICollectionViewDelegate,UICollectionViewDat
         if cell != nil {
             let product = products[indexPath.row]
             cell?.updateViews(product:product)
-            
             return cell!
-            
         }
         return ProductCell()
     }
